@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  #header {
+    background: #0f012b;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    margin: 5px;
+    margin-right: -23px;
+    margin-left: -23px;
+    margin-top: -10px;
+}
+
+
+  #search-form {
+    text-align: center; /* Alinha o conteúdo à direita */
+    margin: 5px;
+    
+  }
+
+  #search-form input[type="submit" ] {
+    padding: 6px 7px;
+    font-size: 8x;
+    background:  #0f012b;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    float: right; /* Flutua o botão de envio para a direita */
+    margin-top: -29px; /* Adiciona uma margem superior negativa */
+    margin-right: 7px;
+  }
+  
+  #search-form input[type="text"] {
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 16px;
+    float: right; /* Flutua o campo de texto para a direita */
+    margin-top: -29px; /* Adiciona uma margem à direita */
+    margin-right: 10px;
+  }
+  
+  
+
+  
+  #results {
+    margin: 20px auto;
+    color: #ffffff;
+    width: 800px;
+    border: 1px solid #ffffff;
+  }
+  
+  .hotel {
+    background: #0f012b;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container1{ 
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header{
+  background-color: black;
+  width: 100%;
+  padding: 15px 4%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.logo{
+  width: 25%;
+}
+
+.logo img{
+  width: 55px;
+  cursor: pointer;
+}
+
+.menu{
+  width: 75%;
+}
+
+.menu nav a{
+  color: #c4c4c4;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 30px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.menu nav a::after{
+  content: " ";
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(45deg , #d9ff00, #d9ff00);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+  width: 30px;
+}
+
+.menu nav a:hover{
+  color: #ffffff;
+}

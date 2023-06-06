@@ -1,0 +1,143 @@
+section.slider{
+    margin: auto;
+    width: 50%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+
+    
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid white;;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+   
+}
+
+.nav-manual{
+    align-items:end;
+    
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #d9ff00;;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #d9ff00;;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.product-info {
+    margin-bottom: 20px;
+}
+
+.product-image {
+    flex: 1;
+    margin-left: 20px;
+}
+
+ .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+     .left-side h1 {
+        font-size: 50px;
+        color:  #fcb900;
+     }
+    
+     .left-side p{
+        color: #fff;
+        margin-bottom: 60px;
+     }
+    
+    .left-side span {
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    .left-side a {
+        text-decoration: none;
+        color: #fff;
+        /* background-color:  #fcb900; */
+        height: fit-content;
+        padding: 15px 20px;
+        border-radius: 5px;
+    }
+
+@media screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .product-image {
+        margin-left: 0;
+    }
+}
+
+
